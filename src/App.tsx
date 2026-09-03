@@ -97,7 +97,7 @@ const App = () => {
                 <a href="#projects" className="font-mono text-[11px] font-semibold tracking-widest uppercase text-field bg-detect rounded-sm px-6 py-4 hover:bg-white hover:text-field transition-colors">
                   View Work
                 </a>
-                <a href="https://github.com/arnavhpd" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-mono text-[11px] font-medium tracking-widest uppercase text-plate border border-rule rounded-sm px-6 py-4 hover:border-detect hover:text-detect transition-colors glass">
+                <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-mono text-[11px] font-medium tracking-widest uppercase text-plate border border-rule rounded-sm px-6 py-4 hover:border-detect hover:text-detect transition-colors glass">
                   <Github size={16} /> GitHub
                 </a>
                 <a href="https://linkedin.com/in/arnav-deshpande-26a792290" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-mono text-[11px] font-medium tracking-widest uppercase text-plate border border-rule rounded-sm px-6 py-4 hover:border-detect hover:text-detect transition-colors glass">
@@ -225,7 +225,7 @@ const App = () => {
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">ROLE</span><span className="text-body">ML INTERN @ DRDO RCI</span></div>
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">FOCUS</span><span className="text-body">ALGORITHM OPTIMIZATION</span></div>
-                  <a href="https://github.com/arnavhpd" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
+                  <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
                 </div>
@@ -251,7 +251,7 @@ const App = () => {
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">EVENT</span><span className="text-body">DEEPMIND HACKATHON</span></div>
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">METRIC</span><span className="text-verify">25% LATENCY REDUCTION</span></div>
-                  <a href="https://github.com/arnavhpd" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
+                  <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
                 </div>
@@ -277,7 +277,7 @@ const App = () => {
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">TYPE</span><span className="text-body">PERSONAL PROJECT</span></div>
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">FOCUS</span><span className="text-body">SCALABLE PIPELINES</span></div>
-                  <a href="https://github.com/arnavhpd" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
+                  <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
                 </div>
@@ -303,7 +303,7 @@ const App = () => {
                   <span className="flex items-center gap-4"><Mail className="text-[#5A6672] group-hover:text-detect transition-colors" /> arnavhpd@gmail.com</span>
                   <ExternalLink size={24} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="https://github.com/arnavhpd" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between font-display font-bold text-2xl md:text-3xl tracking-tight py-4 border-b border-[#C6CCD2] hover:text-detect transition-colors">
+                <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between font-display font-bold text-2xl md:text-3xl tracking-tight py-4 border-b border-[#C6CCD2] hover:text-detect transition-colors">
                   <span className="flex items-center gap-4"><Github className="text-[#5A6672] group-hover:text-detect transition-colors" /> GitHub</span>
                   <ExternalLink size={24} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
