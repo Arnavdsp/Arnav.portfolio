@@ -8,6 +8,8 @@ import {
   Network,
   ExternalLink
 } from 'lucide-react';
+import ParticleBackground from './components/ParticleBackground';
+import Typewriter from './components/Typewriter';
 
 const Github = ({ size = 24, className = '' }: { size?: number, className?: string }) => (
   <svg className={className} xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -44,6 +46,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-field text-body font-sans selection:bg-detect selection:text-field">
       {/* Background Grid */}
+      <ParticleBackground />
       <div className="fixed inset-0 z-0 pointer-events-none opacity-30 bg-[linear-gradient(to_right,#1C2530_1px,transparent_1px),linear-gradient(to_bottom,#1C2530_1px,transparent_1px)] bg-[size:64px_64px]" />
 
       {/* Navbar */}
@@ -80,14 +83,14 @@ const App = () => {
               animate="animate"
               variants={staggerContainer}
             >
-              <motion.div variants={fadeInUp} className="flex items-center gap-3 font-mono text-[11px] tracking-widest text-label uppercase">
-                <span className="w-4 h-[1px] bg-detect"></span>
-                Software Engineer · ML/CV · Data Structures
-              </motion.div>
-              
-              <motion.h1 variants={fadeInUp} className="font-display font-black text-4xl md:text-6xl lg:text-[5.5rem] leading-[0.9] tracking-tight text-plate">
-                I build high-performance systems and detect signals in noise.
+              <motion.h1 variants={fadeInUp} className="font-display font-black text-5xl md:text-7xl lg:text-[6rem] leading-[0.9] tracking-tight text-plate mb-2">
+                Arnav Deshpande
               </motion.h1>
+              
+              <motion.div variants={fadeInUp} className="flex items-center gap-4 font-mono text-xl md:text-2xl lg:text-3xl tracking-widest text-detect uppercase h-10 mt-2 mb-2">
+                <span className="w-8 h-[2px] bg-detect"></span>
+                <Typewriter strings={["AI Engineer", "ML Engineer", "Applied LLM Systems", "Software Engineer"]} />
+              </motion.div>
               
               <motion.p variants={fadeInUp} className="max-w-[60ch] text-lg md:text-xl leading-relaxed text-body">
                 Top-tier engineering candidate specializing in robust backend architecture, advanced data structures, and computer vision. From scaling full-stack applications to sub-pixel object detection at extreme altitudes. IIT Indore, 2027.
@@ -119,9 +122,9 @@ const App = () => {
                   <div className="absolute top-0 left-0 -translate-x-[1px] -translate-y-full flex items-center gap-2 px-2 py-1 bg-detect text-field font-mono text-[10px] font-semibold tracking-widest whitespace-nowrap rounded-t-sm">
                     arnav_deshpande <span className="opacity-80">1.00</span>
                   </div>
-                  <div className="w-full aspect-square border border-rule bg-[#131A22] relative flex items-center justify-center p-8 text-center text-label font-mono text-[10px]">
-                    <div className="absolute top-[20%] left-[20%] w-[60%] h-[60%] border border-detect opacity-50"></div>
-                    [PROFILE_DATA_STREAM]
+                  <div className="w-full aspect-square border border-rule bg-[#131A22] relative overflow-hidden group">
+                    <img src="/portfolio-profile.png" alt="Arnav Deshpande" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div className="absolute inset-0 border border-detect opacity-20 pointer-events-none mix-blend-overlay"></div>
                   </div>
                 </div>
               </div>
