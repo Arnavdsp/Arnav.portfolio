@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Typewriter = ({ strings, delay = 100, deleteDelay = 50, pauseDelay = 2000 }: { strings: string[], delay?: number, deleteDelay?: number, pauseDelay?: number }) => {
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
@@ -6,7 +6,7 @@ const Typewriter = ({ strings, delay = 100, deleteDelay = 50, pauseDelay = 2000 
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     if (isDeleting) {
       if (currentText === '') {
