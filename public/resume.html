@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arnav Deshpande — Résumé</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;800&family=Martian+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  doc-page:not(:defined) { visibility: hidden; }
   body { margin: 0; font-family: "Public Sans", system-ui, sans-serif; text-wrap: pretty; }
   a { color: #0A0E14; text-decoration: none; }
   a:hover { color: #FF2A2A; }
+  @page { size: letter; margin: 0; }
+  html { background: #E9ECEF; }
+  .sheet { width: 8.5in; min-height: 11in; margin: 24px auto; box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
+  @media print {
+    html { background: none; }
+    .sheet { margin: 0; box-shadow: none; }
+  }
+  @media (max-width: 8.5in) {
+    .sheet { width: auto; min-height: 0; margin: 0; box-shadow: none; }
+  }
+  /* Phones: stack the header and drop the label column so nothing overflows. */
+  @media (max-width: 600px) {
+    .sheet { padding: 20px 16px !important; }
+    .sheet > div:first-child { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
+    .sheet > div:first-child > div:last-child { text-align: left !important; }
+    .sheet > div:nth-child(2) { grid-template-columns: 1fr !important; }
+    .sheet span[style*="white-space:nowrap"] { white-space: normal !important; }
+  }
 </style>
-<script src="./doc-page.js"></script>
-</helmet>
-<doc-page size="letter">
-  <section class="page" style="box-sizing:border-box;padding:0.36in 0.5in;background:#FFFFFF;color:#0A0E14;font-size:9.5pt;line-height:1.34">
+</head>
+<body>
+  <section class="sheet" style="box-sizing:border-box;padding:0.36in 0.5in;background:#FFFFFF;color:#0A0E14;font-size:9.5pt;line-height:1.34">
 
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding-bottom:14px;border-bottom:1.5px solid #0A0E14">
       <div style="display:flex;flex-direction:column;gap:6px">
@@ -32,7 +42,7 @@
       <div style="display:flex;flex-direction:column;gap:3px;text-align:right;font-family:'Martian Mono',monospace;font-size:8pt;line-height:1.5;letter-spacing:0.02em;color:#2A3542">
         <a href="mailto:arnavhpd@gmail.com">arnavhpd@gmail.com</a>
         <span>+91 90597 04640</span>
-        <a href="https://github.com/arnavhpd">github.com/arnavhpd</a>
+        <a href="https://github.com/Arnavdsp">github.com/Arnavdsp</a>
         <a href="https://linkedin.com/in/arnav-deshpande-26a792290">linkedin.com/in/arnav-deshpande</a>
       </div>
     </div>
@@ -40,7 +50,7 @@
     <div style="display:grid;grid-template-columns:1.05in 1fr;gap:8px 16px;padding-top:11px">
 
       <div style="font-family:'Martian Mono',monospace;font-size:8pt;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#FF2A2A;padding-top:2px">Focus</div>
-      <div style="font-size:9.5pt;line-height:1.4">Computer vision and applied machine learning — object detection at altitude, geospatial segmentation, and anomaly detection in astrophysical time series. Open to AI/ML, SDE and data roles from 2027; interning before that.</div>
+      <div style="font-size:9.5pt;line-height:1.4">Computer vision and applied machine learning — object detection at altitude and in satellite imagery, and anomaly detection in astrophysical time series. Open to AI/ML, SDE and data roles from 2027; interning before that.</div>
 
       <div style="grid-column:1 / -1;height:1px;background:#D8DDE2"></div>
 
@@ -80,21 +90,21 @@
         <div style="display:flex;flex-direction:column;gap:4px">
           <div style="display:flex;justify-content:space-between;gap:16px"><span><strong style="font-weight:600">Water Bridge Detection via Satellite Imagery</strong> — personal project</span><span style="font-family:'Martian Mono',monospace;font-size:8pt;color:#5A6672;white-space:nowrap">MAR – APR 2026</span></div>
           <div style="display:flex;flex-direction:column;gap:3px;padding-left:2px">
-            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>End-to-end geospatial deep learning for hydraulic infrastructure in multi-spectral imagery: semantic segmentation with object detection.</span></div>
-            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Preprocessing covering data ingestion, spectral band normalization, and tile-based inference across large regions; validated across terrains.</span></div>
+            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Oriented bridge detection over water bodies with YOLOv8-OBB on DOTA v1.0, after GLH-Bridge&#8217;s 16K&#215;16K images exceeded the available GPU memory and disk quota.</span></div>
+            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Water-aware annotation filtering and copy-paste augmentation for the rare bridge class; YOLOv8s reached 54.9% mAP@50 vs 51.6% for YOLOv8n.</span></div>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:4px">
-          <div style="display:flex;justify-content:space-between;gap:16px"><span><strong style="font-weight:600">AI-Powered Mental Health Counsellor</strong> — Google DeepMind Hackathon</span><span style="font-family:'Martian Mono',monospace;font-size:8pt;color:#5A6672;white-space:nowrap">JUN 2025 – PRESENT</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px"><span><strong style="font-weight:600">Aura, a multimodal wellness coach</strong> — Google Gemma 3n hackathon</span><span style="font-family:'Martian Mono',monospace;font-size:8pt;color:#5A6672;white-space:nowrap">JUN 2025 – PRESENT</span></div>
           <div style="display:flex;flex-direction:column;gap:3px;padding-left:2px">
-            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Autonomous conversational agent using LLMs for emotion recognition and real-time dialog management.</span></div>
-            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Rapid multimodal inference path cutting response latency by 25%.</span></div>
+            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Gemma 3n coach that takes text, voice and images and reads affect from text and tone; FastAPI backend with a web UI.</span></div>
+            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>Screens every message for crisis signals before the model replies and hands off to human resources; includes LoRA/DPO fine-tuning code.</span></div>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:4px">
           <div style="display:flex;justify-content:space-between;gap:16px"><span><strong style="font-weight:600">Document Summarizer with NLP</strong> — IIT Indore project</span><span style="font-family:'Martian Mono',monospace;font-size:8pt;color:#5A6672;white-space:nowrap">JUN – AUG 2024</span></div>
           <div style="display:flex;flex-direction:column;gap:3px;padding-left:2px">
-            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>NLP pipeline automating summarization, question answering, and multilingual translation; feature extraction and parsing streamlined for 30% better throughput.</span></div>
+            <div style="display:flex;gap:9px"><span style="color:#FF2A2A">—</span><span>NLP pipeline for document summarization, question answering and multilingual translation.</span></div>
           </div>
         </div>
       </div>
@@ -121,7 +131,5 @@
 
     </div>
   </section>
-</doc-page>
-</x-dc>
 </body>
 </html>
