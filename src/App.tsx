@@ -63,7 +63,7 @@ const App = () => {
             <a href="#contact" className="text-label hover:text-detect transition-colors">Contact</a>
           </div>
           <a 
-            href="/Resume.dc.html" 
+            href="/resume.html" 
             target="_blank" 
             rel="noopener noreferrer"
             className="font-mono text-[11px] font-medium tracking-widest uppercase text-plate border border-rule rounded-sm px-4 py-2 hover:border-detect hover:text-detect transition-colors"
@@ -228,7 +228,7 @@ const App = () => {
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">ROLE</span><span className="text-body">ML INTERN @ DRDO RCI</span></div>
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">FOCUS</span><span className="text-body">ALGORITHM OPTIMIZATION</span></div>
-                  <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
+                  <a href="https://github.com/Arnavdsp/DRDO-Internship-Overview" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
                 </div>
@@ -236,25 +236,25 @@ const App = () => {
             </BoxAnnotation>
 
             {/* Project 2 */}
-            <BoxAnnotation label="AGENTIC_HEALTH_COUNSELLOR" confidence="0.94" className="bg-[#0A0F16]">
+            <BoxAnnotation label="MULTIMODAL_WELLNESS_COACH" confidence="0.94" className="bg-[#0A0F16]">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
                 <div className="lg:col-span-8 flex flex-col gap-6">
                   <h2 className="font-display font-extrabold text-3xl md:text-4xl lg:text-[2.6rem] leading-tight text-plate">
-                    AI-Powered Mental Health Counsellor.
+                    Aura: a multimodal wellness coach.
                   </h2>
                   <p className="max-w-[60ch] text-lg leading-relaxed text-body">
-                    Built at the Google DeepMind hackathon: an autonomous conversational agent for emotion recognition and real-time dialog management. Architected a rapid multimodal inference path that cut response latency by 25% while maintaining highly contextual responses.
+                    Google Gemma 3n hackathon entry: a coach that takes text, voice and images, reads affect from words and tone, and replies with reflection and an open question. Every message is screened for crisis signals before the model replies. Includes LoRA/DPO fine-tuning code.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['LLMs', 'Agentic Workflow', 'Low-Latency', 'System Architecture'].map(tag => (
+                    {['Gemma 3n', 'FastAPI', 'Speech + Vision', 'LoRA / DPO'].map(tag => (
                       <span key={tag} className="font-mono text-[10px] tracking-widest text-body border border-rule rounded-sm px-3 py-2 uppercase">{tag}</span>
                     ))}
                   </div>
                 </div>
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
-                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">EVENT</span><span className="text-body">DEEPMIND HACKATHON</span></div>
-                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">METRIC</span><span className="text-verify">25% LATENCY REDUCTION</span></div>
-                  <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
+                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">EVENT</span><span className="text-body">GEMMA 3N HACKATHON</span></div>
+                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">SAFETY</span><span className="text-verify">CRISIS SCREENING FIRST</span></div>
+                  <a href="https://github.com/Arnavdsp/Aura-The-Mental-Wellness-Coach" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
                 </div>
@@ -262,25 +262,25 @@ const App = () => {
             </BoxAnnotation>
             
             {/* Project 3 */}
-            <BoxAnnotation label="GEOSPATIAL_SEGMENTATION" confidence="0.92" className="bg-[#0A0F16]">
+            <BoxAnnotation label="ORIENTED_BRIDGE_DETECTION" confidence="0.92" className="bg-[#0A0F16]">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
                 <div className="lg:col-span-8 flex flex-col gap-6">
                   <h2 className="font-display font-extrabold text-3xl md:text-4xl lg:text-[2.6rem] leading-tight text-plate">
                     Water Bridge Detection via Satellite Imagery.
                   </h2>
                   <p className="max-w-[60ch] text-lg leading-relaxed text-body">
-                    End-to-end geospatial deep learning for hydraulic infrastructure in multi-spectral imagery. Developed an optimized data ingestion pipeline, spectral band normalization, and tile-based inference scalable across large geographical regions.
+                    Oriented bounding-box detection of bridges over water with YOLOv8-OBB. Moved from GLH-Bridge (16K×16K images that exhausted GPU memory and disk quota) to tiled DOTA v1.0, added water-aware annotation filtering and augmentation for the rare bridge class, and compared YOLOv8n against YOLOv8s.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Semantic Segmentation', 'Data Pipelines', 'Spatial Analysis', 'SQL'].map(tag => (
+                    {['YOLOv8-OBB', 'DOTA v1.0', 'Oriented Detection', 'PyTorch'].map(tag => (
                       <span key={tag} className="font-mono text-[10px] tracking-widest text-body border border-rule rounded-sm px-3 py-2 uppercase">{tag}</span>
                     ))}
                   </div>
                 </div>
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">TYPE</span><span className="text-body">PERSONAL PROJECT</span></div>
-                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">FOCUS</span><span className="text-body">SCALABLE PIPELINES</span></div>
-                  <a href="https://github.com/Arnavdsp" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
+                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">RESULT</span><span className="text-body">54.9% mAP@50 (YOLOv8s)</span></div>
+                  <a href="https://github.com/Arnavdsp/Water-Bridge-Detection-Through-Satellite-Imagery" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
                 </div>
@@ -314,7 +314,7 @@ const App = () => {
                   <span className="flex items-center gap-4"><Linkedin className="text-[#5A6672] group-hover:text-detect transition-colors" /> LinkedIn</span>
                   <ExternalLink size={24} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
-                <a href="/Resume.dc.html" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between font-display font-bold text-2xl md:text-3xl tracking-tight py-4 border-b border-[#C6CCD2] hover:text-detect transition-colors">
+                <a href="/resume.html" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between font-display font-bold text-2xl md:text-3xl tracking-tight py-4 border-b border-[#C6CCD2] hover:text-detect transition-colors">
                   <span className="flex items-center gap-4 text-detect">Résumé PDF ↓</span>
                 </a>
               </div>

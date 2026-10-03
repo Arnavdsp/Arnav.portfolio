@@ -1,32 +1,30 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal site: a single page with an intro, skills, three selected projects
+and contact links, plus a printable résumé at `/resume.html`.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript, built with Vite
+- Tailwind CSS v4 for styling, Framer Motion for the section animations
+- `src/components/ParticleBackground.tsx`: the canvas particle field behind the page
+- `src/components/Typewriter.tsx`: the typing effect in the hero
+- `public/resume.html`: a standalone HTML résumé sized for US Letter, so it prints
+  to a one-page PDF straight from the browser
 
-## React Compiler
+## Projects linked from the site
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Project | Repo |
+|---|---|
+| High-altitude tiny object detection (DRDO internship) | [DRDO-Internship-Overview](https://github.com/Arnavdsp/DRDO-Internship-Overview) |
+| Aura, a multimodal wellness coach (Gemma 3n hackathon) | [Aura-The-Mental-Wellness-Coach](https://github.com/Arnavdsp/Aura-The-Mental-Wellness-Coach) |
+| Bridge detection over water with YOLOv8-OBB | [Water-Bridge-Detection-Through-Satellite-Imagery](https://github.com/Arnavdsp/Water-Bridge-Detection-Through-Satellite-Imagery) |
 
-## Expanding the Oxlint configuration
+## Running it
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm ci
+npm run dev       # local dev server
+npm run build     # type-check and build to dist/
+npm run lint      # oxlint
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
