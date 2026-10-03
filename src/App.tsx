@@ -269,7 +269,7 @@ const App = () => {
                     Water Bridge Detection via Satellite Imagery.
                   </h2>
                   <p className="max-w-[60ch] text-lg leading-relaxed text-body">
-                    Oriented bounding-box detection of bridges over water with YOLOv8-OBB. Moved from GLH-Bridge (16K×16K images that exhausted GPU memory and disk quota) to tiled DOTA v1.0, added water-aware annotation filtering and augmentation for the rare bridge class, and compared YOLOv8n against YOLOv8s.
+                    Bridge detection over water in aerial imagery. Filtered GLH-Bridge (images up to 16K×16K) to bridges over water with an RGB heuristic and trained YOLOv8s on it; for oriented boxes, compared YOLOv8n- and YOLOv8s-OBB on tiled DOTA v1.0.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {['YOLOv8-OBB', 'DOTA v1.0', 'Oriented Detection', 'PyTorch'].map(tag => (
@@ -279,7 +279,7 @@ const App = () => {
                 </div>
                 <div className="lg:col-span-4 flex flex-col gap-4 font-mono text-[10px] tracking-widest text-label uppercase">
                   <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">TYPE</span><span className="text-body">PERSONAL PROJECT</span></div>
-                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">RESULT</span><span className="text-body">54.9% mAP@50 (YOLOv8s)</span></div>
+                  <div className="flex flex-col gap-2 pb-4 border-b border-rule"><span className="text-[#3E4A58]">RESULT</span><span className="text-body">54.9% mAP@50 (YOLOv8s-OBB, DOTA val)</span></div>
                   <a href="https://github.com/Arnavdsp/Water-Bridge-Detection-Through-Satellite-Imagery" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] font-semibold tracking-widest uppercase text-body border border-rule rounded-sm px-4 py-3 hover:border-detect hover:text-detect transition-colors">
                     View on GitHub <ExternalLink size={14} />
                   </a>
