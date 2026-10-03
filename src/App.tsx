@@ -68,7 +68,7 @@ const App = () => {
             rel="noopener noreferrer"
             className="font-mono text-[11px] font-medium tracking-widest uppercase text-plate border border-rule rounded-sm px-4 py-2 hover:border-detect hover:text-detect transition-colors"
           >
-            Résumé ↓
+            Résumé ↗
           </a>
         </div>
       </nav>
@@ -315,7 +315,7 @@ const App = () => {
                   <ExternalLink size={24} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
                 <a href="/resume.html" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between font-display font-bold text-2xl md:text-3xl tracking-tight py-4 border-b border-[#C6CCD2] hover:text-detect transition-colors">
-                  <span className="flex items-center gap-4 text-detect">Résumé PDF ↓</span>
+                  <span className="flex items-center gap-4 text-detect">Résumé ↗</span>
                 </a>
               </div>
             </div>

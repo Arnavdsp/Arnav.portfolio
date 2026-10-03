@@ -21,6 +21,14 @@
   @media (max-width: 8.5in) {
     .sheet { width: auto; min-height: 0; margin: 0; box-shadow: none; }
   }
+  /* Phones: stack the header and drop the label column so nothing overflows. */
+  @media (max-width: 600px) {
+    .sheet { padding: 20px 16px !important; }
+    .sheet > div:first-child { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
+    .sheet > div:first-child > div:last-child { text-align: left !important; }
+    .sheet > div:nth-child(2) { grid-template-columns: 1fr !important; }
+    .sheet span[style*="white-space:nowrap"] { white-space: normal !important; }
+  }
 </style>
 </head>
 <body>
