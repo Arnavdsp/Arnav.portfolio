@@ -3,6 +3,10 @@
   "buildCommand": null,
   "outputDirectory": ".",
   "cleanUrls": true,
-  "rewrites": [{ "source": "/resume", "destination": "/Resume.dc.html" }],
-  "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Content-Type-Options", "value": "nosniff" }] }]
+  "rewrites": [
+    { "source": "/resume", "destination": "/Resume.dc" }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [{ "key": "X-Content-Type-Options", "value": "nosniff" }] }
+  ]
 }
