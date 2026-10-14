@@ -1,30 +1,24 @@
-# Portfolio
+# arnav-portfolio
 
-My personal site: a single page with an intro, skills, three selected projects
-and contact links, plus a printable résumé at `/resume.html`.
+Static site. No build step.
 
-## Stack
+- `index.html` — portfolio
+- `Resume.dc.html` — résumé (also served at `/resume`)
+- `vercel.json` — routing
 
-- React 19 + TypeScript, built with Vite
-- Tailwind CSS v4 for styling, Framer Motion for the section animations
-- `src/components/ParticleBackground.tsx`: the canvas particle field behind the page
-- `src/components/Typewriter.tsx`: the typing effect in the hero
-- `public/resume.html`: a standalone HTML résumé sized for US Letter, so it prints
-  to a one-page PDF straight from the browser
+## Deploy from Antigravity
 
-## Projects linked from the site
+1. Open this folder in Antigravity (File → Open Folder).
+2. In the terminal:
+   ```
+   git init && git add . && git commit -m "Portfolio"
+   git branch -M main
+   git remote add origin https://github.com/Arnavdsp/arnav-portfolio.git
+   git push -u origin main
+   ```
+3. On vercel.com → Add New → Project → import `arnav-portfolio`.
+   Framework preset: **Other**. Build command: empty. Output directory: `./`. Deploy.
 
-| Project | Repo |
-|---|---|
-| High-altitude tiny object detection (DRDO internship) | [DRDO-Internship-Overview](https://github.com/Arnavdsp/DRDO-Internship-Overview) |
-| Aura, a multimodal wellness coach (Gemma 3n hackathon) | [Aura-The-Mental-Wellness-Coach](https://github.com/Arnavdsp/Aura-The-Mental-Wellness-Coach) |
-| Bridge detection over water with YOLOv8-OBB | [Water-Bridge-Detection-Through-Satellite-Imagery](https://github.com/Arnavdsp/Water-Bridge-Detection-Through-Satellite-Imagery) |
+Or skip GitHub: `npm i -g vercel` then `vercel --prod` from this folder.
 
-## Running it
-
-```bash
-npm ci
-npm run dev       # local dev server
-npm run build     # type-check and build to dist/
-npm run lint      # oxlint
-```
+To keep the existing URL (arnav-portfolio-31di.vercel.app), push to the repo that project already deploys from instead of creating a new one.
